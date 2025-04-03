@@ -11,21 +11,7 @@ ssize_t _write(int fd, const void *buf, size_t count);
 
 #define UART ((NRF_UART_REG*)0x40002000)
 
-/*
-typedef struct {
-    volatile uint32_t TASKS_STARTRX;
-    volatile uint32_t TASKS_STOPRX;
-    volatile uint32_t TASKS_STARTTX;
-    volatile uint32_t buffer[61];
-    volatile uint32_t EVENTS_CTS;
-    volatile uint32_t EVENTS_NCTS;
-    volatile uint32_t EVENTS_RXDRDY;
-    volatile uint32_t EVENTS_TXDRDY;
-    volatile uint32_t EVENTS_ERROR;
-    volatile uint32_t EVENTS_RXTO;
 
-} NRF_UART_REG;
-*/
 typedef struct {
     volatile uint32_t TASKS_STARTRX;
     volatile uint32_t TASKS_STOPRX;
